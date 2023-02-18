@@ -11,7 +11,7 @@ import { blog } from "../../assets/data/data";
 export const DetailsPages = () => {
   const { id } = useParams();
   const [blogs, setBlogs] = useState(null);
-  console.log(id);
+  
   useEffect(() => {
     let blogs = blog.find((blogs) => blogs.id === parseInt(id));
     if (blogs) {
